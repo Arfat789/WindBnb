@@ -1,0 +1,41 @@
+@media only screen and (max-width: 600px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+      
+    }
+
+    .search-box{
+        width: 100%;
+    }
+    .open-header{
+        display: none;
+        justify-content: start;
+        align-items: center;
+        z-index: 2;
+        background-color: white;
+        position: absolute;
+        height: 40vh;
+        width: 100%;
+        top: 0px;
+        flex-direction: column;
+    
+    }
+
+    .location-box{
+        display: block;
+        position: relative;
+        top: 20px;
+        right: 20px;
+     }
+
+     .filter-guest-bottom{
+        display: none;
+        position: relative;
+        top: 20px;
+        right: 20px;
+    
+     }
+  }

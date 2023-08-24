@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&family=Kumbh+Sans&family=League+Spartan:wght@700&family=Orbitron&family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;1,300&family=Raleway:wght@100&family=Roboto:ital,wght@0,400;1,700&display=swap');
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+font-family: 'Kumbh Sans', sans-serif;
+font-family: 'League Spartan', sans-serif;
+font-family: 'Orbitron', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --box-width: 50px
+}
+
+/* following are usablity classes */
+.flex{
+    display: flex;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.overlay {
+   
+    filter: blur(5px)  grayscale(50%);
+    z-index: 2;
+    opacity: 0.5;
+  }
+
+  .super-host{
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+  li{
+    text-decoration: none;
+    display: flex;
+    gap: 10px;
+  }
+  ul{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .border{
+    border: 1px solid black;
+  }
+
+  .column{
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .gap{
+   gap: 5px;
+  }
+
+
+
+
+
+
+/* the following are the styling of the boxes */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: var(--box-width);
+}
+
+
+.search-box{
+    display: flex;
+    align-items: center;
+    
+    width: 300px;
+    height: 50px;
+    background-color: #fff;
+    border: 0px solid black;
+    box-shadow: 0px 0px 3px rgb(153, 151, 151);
+    border-radius: 15px;
+}
+
+.filter-place{
+    display: flex;
+    border-right: 1px solid rgb(153, 151, 151);
+    height: 50px;
+    align-items: center;
+    padding:10px;
+}
+
+.filter-guest{
+    display: flex;
+    border-right: 1px solid rgb(153, 151, 151);
+    height: 50px;
+    align-items: center;
+    padding:10px;
+    color: grey;
+  
+}
+
+.filter-search{
+   
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.filter-search-open i{
+    color: #EB5757;
+    font-size: 20px;
+    width: 20px;
+   
+ }
+
+/* the following is to open the header */
+
+.open-header{
+    display: none;
+    justify-content: center;
+    z-index: 2;
+    background-color: white;
+    position: absolute;
+    height: 70vh;
+    width: 100%;
+    top: 0px;
+    flex-direction: column;
+
+}
+
+.search-box-open{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 80%;
+    height: 50px;
+    background-color: #fff;
+    border: 0px solid black;
+    box-shadow: 0px 0px 3px rgb(153, 151, 151);
+    border-radius: 15px;
+}
+
+.filter-place-open{
+    display: flex;
+    border-right: 1px solid rgb(153, 151, 151);
+    height: 50px;
+    align-items: center;
+    padding:10px;
+    width: 33%;
+}
+
+.filter-guest-open{
+    display: flex;
+    border-right: 1px solid rgb(153, 151, 151);
+    height: 50px;
+    align-items: center;
+    padding:10px;
+    color: grey;
+    width: 30%;
+  
+}
+
+.filter-search-open{
+    /* display: block; */
+    margin-inline: auto;
+    width: 30%;
+}
+
+.filter-search i{
+    color: #EB5757;
+    font-size: 20px;
+ }
+
+ .location-box{
+    display: block;
+    position: relative;
+    top: 20px;
+    right: -20px;
+ }
+
+ .filter-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    /* gap: 200px; */
+
+ }
+ .filter-guest-bottom{
+    display: none;
+    position: relative;
+    top: 20px;
+    right: -400px;
+
+ }
+
+ .Counter{
+    gap: 10px;
+    align-items: center;
+ }
+ .minus, .plus{
+    padding: 4px 8px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid grey;
+
+ }
+
+
+
+
+
+
+
+ /* the following code is for main body */
+.main-body{
+    margin: var(--box-width);
+    background-color: white;
+}
+
+.text-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-container{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 50px;
+}
+
+.main-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 350px;
+    width: 350px;
+    gap: 10px;
+}
+
+.main-box img{
+  width: 350px;
+  height: 250px;
+  border-radius: 30px;
+}
+
+.box-text-box{
+  display: flex;
+  justify-content: space-between;
+}
+.box-text-box i{
+    color: #EB5757;
+}
+
+

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaQuerries.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+  <script src="https://kit.fontawesome.com/14dd167f14.js" crossorigin="anonymous"></script>
+</head>
+<body onload="update()" >
+  <!-- the following is the header part -->
+
+
+  <header class="flex">
+    <div class="logo">
+        <img src="logo.png" alt="">
+    </div>
+    <div class="search-box open-box" id="filter-place" > 
+        <div class="filter-place pointer">
+            <p id="map-text2">Helsinki, Finland</p>
+        </div>
+        <div class="filter-guest open-box pointer" >
+            <P>Add Guest</P>
+        </div>
+        <div class="filter-search pointer open-box" >
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+  </header>
+
+
+ <!-- the follwin gis when the header opens -->
+  <section class="open-header" id="open-header">
+    <div class="search-box-open"> 
+      <div class="filter-place-open pointer" id="btn-location">
+          <p id="map-text"> Helsinki, Finland</p>
+      </div>
+      <div class="filter-guest-open pointer" id="guest-btn">
+          <P>Add Guest</P>
+      </div>
+      <div class="filter-search-open pointer" id="search-btn">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+  </div>
+
+<div class="filter-bottom " >
+
+   <div class="location-box" id="filter-bottom">
+    <ul class="pointer">
+      <li><i class="fa-solid fa-location-dot"></i>  <p class="p-text">Helsinki, Finland</p></li>
+      <li><i class="fa-solid fa-location-dot"></i>  <p class="p-text">Turku, Finland</p></li>
+      <li><i class="fa-solid fa-location-dot"></i>  <p class="p-text">Oulu, Finland</p></li>
+      <li><i class="fa-solid fa-location-dot"></i>  <p class="p-text">Vassa, Finland</p></li>
+    </ul>
+    
+   </div>
+
+   <div class="filter-guest-bottom" id="filter-guest-bottom">
+    <div class="flex column">
+      <ul class="gap">
+        <h3>Adults</h1>
+        <p>Ages 13 or above</p>
+        <div class="Counter flex">
+            <button class="minus pointer" id="minusAdult">-</button>
+            <p id="counterAdult">0</p>
+            <button class="plus pointer" id="plusAdult">+</button>
+        </div>
+      </ul> 
+
+      <ul class="gap">
+        <h3>Children</h1>
+        <p>Ages 2-12</p>
+        <div class="Counter flex">
+            <button class="minus pointer" id="minusChild">-</button>
+            <p id="counterChild">0</p>
+            <button class="plus pointer" id="plusChild">+</button>
+        </div>
+      </ul> 
+      </div>
+   </div>
+
+  </div>
+
+  </section>
+
+
+
+  <!-- the header completes here -->
+  <!-- the main body starts from here -->
+  <section class="main-body " id="main-body">
+    <div class="text-box flex">
+      <h1>Stays in Finland</h1>
+      <p>12+ stays</p>
+    </div>
+
+    <div class="box-container" id="box-container">
+      <div class="main-box">
+        <img src="https://images.unsplash.com/photo-1505873242700-f289a29e1e0f?ixlib=rb-1.2.1&auto=format&fit=crop&w=2255&q=80" alt="">
+        <div class="box-text-box">
+            <p>Private room</p> <div class="flex"><i class="fa-solid fa-star"></i><p>4.25</p></div>
+        </div>
+        <h3>Stylist apartment in center of the city</h3>
+      </div>
+
+      <div class="main-box">
+        <img src="https://images.unsplash.com/photo-1505873242700-f289a29e1e0f?ixlib=rb-1.2.1&auto=format&fit=crop&w=2255&q=80" alt="">
+        <div class="box-text-box">
+            <p>Private room</p> <div class="flex"><i class="fa-solid fa-star"></i><p>4.25</p></div>
+        </div>
+        <h3>Stylist apartment in center of the city</h3>
+      </div>
+
+
+     
+    </div>
+
+  </section>
+<script src="main.js"></script>
+</body>
+</html>
